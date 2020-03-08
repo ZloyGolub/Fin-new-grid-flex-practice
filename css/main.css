@@ -100,7 +100,7 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    height: 510px;
+    height: 51.1em;
 }
 
 .backBox1 {
@@ -109,6 +109,14 @@ body {
     align-items: center;
     justify-content: center;
 }
+.backBox21 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: url("../images/fin.jpg");
+    height: 51.1em;
+    width: 38.3em;
+}
+
 
 .shortInfo {
     font-family: Montserrat;
@@ -119,6 +127,13 @@ body {
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
+@media screen and (max-width: 1200px) {
+    .shortInfo {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+  }
 
 .inBox1 {
     display: grid;
@@ -132,9 +147,34 @@ body {
     font-size: 1.4em;
     line-height: 166.4%;
 }
+/*others backgrounds*/
+.background2 {
+    background: url("../images/Rectangle2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+}
 
+.background3 {
+    background: url("../images/Rectangle3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 18.5em;
+}
 /* content text */
+.content {    
+    margin: 6em 14em 6em 14em;
+}
 
-.content {
+.content > div{
     font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.content > br {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 3em !important;
 }
