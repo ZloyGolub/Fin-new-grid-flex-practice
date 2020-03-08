@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 7px;
+    }
+  }
+@media screen and (max-width: 800px) {
+body {
+    font-size: 6px;
+}
+}
+/*HEADER*/
+.header {
+    background-color: aliceblue;
+    min-width: 100%;
+    min-height: 138px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 4fr;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoText {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 4.2em;
+    color: #143C6B;
+}
+.LogoRectangle {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(147deg, #447ec1 10%, #143C6B 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.navlink {
+    margin: 10px;
+    font-family: 'Montserrat';
+    font-size: 1.8em;
+    transition: color 0.2s linear;
+    text-decoration: none;
+    color: #143C6B;
+}
+
+.navlink:hover {
+    color: blue;
+}
+
+
+.line {
+    height: 44px;
+    width: 2px;
+    background-color: #ACCCF1;
+    margin-top: 3px;
+}
+
+/*FIRST BAVKGROUND*/
+
+.background1 {
+    background: url("../images/Rectangle1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 510px;
+}
+
+.backBox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortInfo {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.2em;
+    line-height: 138.9%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.inBox1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.backLink {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 166.4%;
+}
+
+/* content text */
+
+.content {
+    font-family: Montserrat;
+}
