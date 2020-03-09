@@ -8,29 +8,33 @@ html {
     font-size: 10px;
     margin: 0;
     width: 100%;
+    min-width: 700px;    
 }
 
 body {
     font-family: Arial;
     margin: 0;
+    min-width: 700px;
+    
 }
-@media screen and (max-width: 1200px) {
-    body {
-        font-size: 7px;
-    }
-  }
-@media screen and (max-width: 800px) {
-body {
-    font-size: 6px;
-}
-}
+
 /*HEADER*/
 .header {
     background-color: aliceblue;
     min-width: 100%;
-    min-height: 138px;
+    min-height: 90px;
+    z-index: 5000;
     display: grid;
-    grid-template-columns: 2fr 0.5fr 4fr;
+    grid-template-columns: 2fr 0.5fr 4fr;    
+}
+
+.fixed {
+    z-index: 5000;
+    position: fixed;
+}
+
+.headerTop {
+    height: 138px;
 }
 
 .box1 {
@@ -44,6 +48,18 @@ body {
     font-weight: bolder;
     font-size: 4.2em;
     color: #143C6B;
+}
+@media screen and (max-width: 1200px) {
+
+    .LogoText{
+        font-size: 2.2em;
+    }
+  }
+@media screen and (max-width: 800px) {
+
+    .LogoText{
+        font-size: 1.6em;
+    }
 }
 .LogoRectangle {
     height: 50px;
@@ -131,9 +147,17 @@ body {
     .shortInfo {
         padding-left: .5em;
         padding-right: .5em;
+        font-size: 3.8em;
     }
+}
+@media screen and (max-width: 800px) {
 
-  }
+    .shortInfo{
+        padding-left: .5em;
+        padding-right: .5em;
+        font-size: 3.0em;
+    }
+}
 
 .inBox1 {
     display: grid;
@@ -161,9 +185,14 @@ body {
     background-position: center;
     height: 18.5em;
 }
+
+.gradientBackground {
+    background: linear-gradient(180deg, #102D66 0%, #360842 100%);
+    min-height: 824px;
+}
 /* content text */
 .content {    
-    margin: 6em 14em 6em 14em;
+    margin: 6em 20% 6em 20%;
 }
 
 .content > div{
@@ -177,4 +206,64 @@ body {
     content: "A" !important;
     display: block !important;
     margin-bottom: 3em !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        margin: 6em 10% 6em 10%;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .content{        
+        margin: 2em 5% 2em 5%;
+        font-size: 1.5em;
+    }
+}
+
+
+/* coemnts block*/
+.commentsBlock {
+    margin-top: 45px;
+    line-height: 166.4%;
+    letter-spacing: 0.07em;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.stroke {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    background: #E9F4F8;
+    padding: 20px;
+    min-width: 450px;
+    max-width: 800px;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 30px 3fr;
+}
+
+.name_leavetime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .commentsBlock {
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .commentsBlock{
+        font-size: 3em;
+    }
 }

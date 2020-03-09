@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="top"></div>
     <!--Header-->
     <div class="header">
         <div class="box1">
             <div class="LogoRectangle">
                 <img src="images/Group.svg" alt="">
             </div>
-            <div class="LogoText">FIN NEWS</div>
+            <div class="LogoText" onclick="slowScroll('.top')">FIN NEWS</div>
         </div>
         <div class="box2">
 
@@ -96,6 +97,109 @@
         </div>
     </div>
     
+    <div class="gradientBackground">
+        <div></div>
+    </div>
+
+    <div class="commentsBlock">
+        <div>Комментарии</div>
+        <div class="stroke">
+            <div class="left">
+                <img src="images/Ellipse1.png" alt="">
+            </div>
+            <div class="right">
+                <div class="name_leavetime">
+                    <div>Каролина Стифенссон</div>
+                    <div>2 часа назад</div>
+                </div>
+                <div class="comment">
+                    Я внесла 500 футнов и уже на следующий день у меня было уже 1 167 футнов. Сегодня пойду покупать iphone 11 pro
+                </div>
+            </div>
+        </div>
+
+        <div class="stroke">
+            <div class="left">
+                <img src="images/Ellipse2.png" alt="">
+            </div>
+            <div class="right">
+                <div class="name_leavetime">
+                    <div>Карл Марксон</div>
+                    <div>2 часа назад</div>
+                </div>
+                <div class="comment">
+                    Я до последнего думал, что это развод. Пока не увидел у своего друга новенький мерседес, который он купил для своей жены. Как оказалось он инвестировал свои деньги именно в эту компанию буквально месяц назад. Вообщем... вчера внес 1 500 футнов для пробы. Уже сегодня имею 4 184 футнов!!!
+                </div>
+            </div>
+        </div>
+
+        <div class="stroke">
+            <div class="left">
+                <img src="images/Ellipse3.png" alt="">
+            </div>
+            <div class="right">
+                <div class="name_leavetime">
+                    <div>Ирхан Бали</div>
+                    <div>3 часа назад</div>
+                </div>
+                <div class="comment">
+                    Я работаю юристом в компании Volvo и решил внимательно проверить эту компанию. И понял, что все абсолютно легально и честно. Сегодня вечером положу 5 000 футнов и отвечу вам про результат.
+                </div>
+            </div>
+        </div>
+
+        <div class="stroke">
+            <div class="left">
+                <img src="images/Ellipse4.png" alt="">
+            </div>
+            <div class="right">
+                <div class="name_leavetime">
+                    <div>Гретта Джонсон</div>
+                    <div>16 часов назад</div>
+                </div>
+                <div class="comment">
+                    Я узнала про данный заработок еще год назад. Пишу вам это с Мальдив, где сейчас в своем доме доедаю лобстера =)))))
+                </div>
+            </div>
+        </div>
+
+        <div class="stroke">
+            <div class="left">
+                <img src="images/Ellipse5.png" alt="">
+            </div>
+            <div class="right">
+                <div class="name_leavetime">
+                    <div>Ивар Мэйсон</div>
+                    <div>1 день назад</div>
+                </div>
+                <div class="comment">
+                    Компания перестанет собирать заявки в конце этого месяца, так что поторопитесь. Они смогут принять не больше 20 000 человек.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+        }
+
+        $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0)
+            $(".header").removeClass("fixed");
+        else
+            $(".header").attr("class", "header fixed");
+        });
+    </script>
+
 </body>
 </html>
 
