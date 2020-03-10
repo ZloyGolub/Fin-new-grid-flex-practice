@@ -267,3 +267,28 @@ body {
         font-size: 3em;
     }
 }
+
+/*footer styles*/
+
+.footer {    
+    text-align: center;
+    color: #ffffff;
+    background: #102D66;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 5% 15px 5%;
+}
+
+.logo_with_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.2em;
+    letter-spacing: 0.065em;
+}
