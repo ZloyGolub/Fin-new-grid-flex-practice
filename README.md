@@ -1,4 +1,4 @@
-Fin News - Responsive Layout Practice with Grid and Flexbox 2020 year
+Fin News - Demonstration of responsive layout without breakpoints
 
 Welcome to Fin News, a practice project focused on mastering responsive web design using CSS Grid and Flexbox. This website layout was created as part of my journey to improve front-end development skills and learn how to build adaptive designs for various screen sizes.
 
